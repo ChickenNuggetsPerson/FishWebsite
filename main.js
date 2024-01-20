@@ -20968,7 +20968,7 @@ let src = "";
 function getImg() {
     randInt = Math.trunc(Math.random() * data.length)
     src = data[randInt].img_src_set["2x"]
-    while (src == "Not available") {
+    while (src == "Not available" || src === undefined) {
         randInt = Math.trunc(Math.random() * data.length)
         src = data[randInt].img_src_set["2x"]
     }
